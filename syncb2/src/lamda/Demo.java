@@ -10,9 +10,17 @@ public class Demo {
 		Drawable d2 = () -> {System.out.println("ur drawing");};
 		d2.draw();
 		
+		Sayable s3 = Demo::saySomething;
+		System.out.println(s3.say("sync"));
+
 		Sayable s2 =  (name) -> {return "hi "+name;};
 		System.out.println(s2.say("ansari"));
-		}
 	}
+
+	public static String saySomething(String name){  
+		System.out.println("Hello, this is static method.");  
+		return "hello method ref";
+	}  
+}
 
 
