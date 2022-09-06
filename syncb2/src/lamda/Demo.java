@@ -15,6 +15,11 @@ public class Demo {
 
 		Sayable s2 =  (name) -> {return "hi "+name;};
 		System.out.println(s2.say("ansari"));
+		
+		SomeArith sa = new SomeArith();
+		
+		Arithmetic ar = sa::sum;
+		System.out.println(ar.add(10, 20));
 	}
 
 	public static String saySomething(String name){  
