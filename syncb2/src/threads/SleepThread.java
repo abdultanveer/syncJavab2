@@ -1,16 +1,18 @@
 package threads;
 
-public class HostelThread implements Runnable{
+public class SleepThread extends Thread{
+	public SleepThread(String name) {
+		super(name);
+	}
 
 	@Override
 	public void run() {
-
-		System.out.println("getting seal n sign from hostel");
-
+		// TODO Auto-generated method stub
+		super.run();
 		for(int i=1;i<6;i++) {
-
+			
 			try {
-				Thread.sleep(500);
+				sleep(500);
 				System.out.println(i+"---"+Thread.currentThread().getName());
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -18,5 +20,4 @@ public class HostelThread implements Runnable{
 			}
 		}
 	}
-
 }
