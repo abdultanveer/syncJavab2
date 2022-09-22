@@ -1,5 +1,7 @@
 package basics;
 
+import accessmodifiers.other.Algo;
+
 public class Demonstration {
 
 	public static void main(String[] args) {
